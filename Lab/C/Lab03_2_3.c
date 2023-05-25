@@ -12,7 +12,7 @@ char transform(char input) {
 	}
 	return (input - 4);
 	*/
-	int pre = input - 4;
+	/*int pre = input - 4;
 	if (!(input < 65)) {
 		// 65 66 ..... 90 
 		// A  B  ..... Z
@@ -28,7 +28,10 @@ char transform(char input) {
 	if (!(input > 122)) {
 
 	}
-
+	*/
+	input = input - 4;
+	if(){
+	}
 
 }
 
