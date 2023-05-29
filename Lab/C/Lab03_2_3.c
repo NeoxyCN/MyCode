@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
+// 如果是字母则需要转换
 char transform(char input) {
 	/*if (input <= 90 && input >= 65) {
 		return (input - 4);
@@ -14,10 +15,10 @@ char transform(char input) {
 	*/
 	/*int pre = input - 4;
 	if (!(input < 65)) {
-		// 65 66 ..... 90 
+		// 65 66 ..... 90
 		// A  B  ..... Z
-    
-    //TODO
+
+	//TODO
 
 	}
 
@@ -29,8 +30,15 @@ char transform(char input) {
 
 	}
 	*/
+	//首先减4
 	input = input - 4;
-	if(){
+	//再判断减去4之后是不是字母
+	if (isalpha(input)) {
+		return input;
+	} else {
+		input = input + 26;
+		return input;
+
 	}
 
 }
@@ -45,11 +53,56 @@ int main() {
 		if (isalpha(c[i])) {
 			c[i] = transform(c[i]);
 			printf("%c", c[i]);
-		}
-		else {
+		} else {
 			printf("%c", c[i]);
 		}
 	}
 
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
