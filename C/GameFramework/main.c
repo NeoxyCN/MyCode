@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS 0
 #include <stdio.h>
 #include <conio.h>
 
@@ -12,12 +13,15 @@ int main() {
 			case 27:
 				KEEP_RUN = 0;
 				break;
-				
 			default:
 				printf("%d\n", key);
 				break;
 			}
 			break;
-		}//W: 119 A:97 S:115 D:100 ESC:27
+		}//W: 119 A:97 S:115 D:100 ESC:27 大小写注意
 	}
+}
+
+int clear() {
+	printf("%c", 127);
 }
