@@ -18,7 +18,7 @@ char transform(char input) {
 		// 65 66 ..... 90
 		// A  B  ..... Z
 
-	//TODO
+	//TODO 新的算法
 
 	}
 
