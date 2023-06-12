@@ -10,16 +10,13 @@ double fac(int num) {
 
 int main() {
 	//0!=1
-	double e = 1.0, sum = 0;
 	int i = 1;
-	do{
-		sum =sum + fac(i);
-		e = e+(1.0/sum);
-		//printf("%d", fac(i));
-		
+	double e = 1, n = 0;
+	while ((1 / n) >= 1E-6) {
+		n = fac(i);
+		e += (1 / n);
 		i++;
-		printf("%lf\n", e);
-	} while (!( e< 10E-6));
+	}
 	printf("%f", e);
 	return 0;
 }
