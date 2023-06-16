@@ -1,3 +1,7 @@
+//九九乘法表
+//Neoxy
+//2023.6.16
+
 #include <stdio.h>
 
 int main() {
