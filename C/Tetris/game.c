@@ -39,8 +39,8 @@ int main() {
 
 int gameloop() {
 	draw_border();
-
-	switch (_getch()) {
+	if(_kbhit()){
+		switch (_getch()) {
 		case KEY_RIGHT:
 			//TODO
 			break;
@@ -56,7 +56,9 @@ int gameloop() {
 		case KEY_ESC:
 			keeprun = 0;
 			break;
+		}
 	}
+	
 	clear();
 
 }
