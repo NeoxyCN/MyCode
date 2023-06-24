@@ -7,8 +7,8 @@ int main()
     int *pointer=&i;
     printf("直接访问变量值：%d\n",i);
     printf("间接访问变量值：%d\n",*pointer);
-    printf("直接访问地址：%d\n",&i);
-    printf("间接访问地址：%d\n",pointer);
-    printf("指针变量地址：%d\n",&pointer);
+    printf("直接访问地址：%p\n",&i);
+    printf("间接访问地址：%p\n",pointer);
+    printf("指针变量地址：%p\n",&pointer);
     return 0;
 }
