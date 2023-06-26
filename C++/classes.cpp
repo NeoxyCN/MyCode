@@ -1,18 +1,21 @@
 #include <iostream>
 
-class Square {
-	public:
-		double length;
-		double height;
+class Square
+{
+public:
+	double length;
+	double height;
 
-		double get(void);
+	double get(void);
 };
 
-double Square::get() {
+double Square::get()
+{
 	return (length * height);
 }
 
-int main() {
+int main()
+{
 	Square box;
 	box.height = 100.2;
 	box.length = 20.5;
