@@ -8,12 +8,12 @@ int main() {
 
 	fp = fopen("first.txt", "r");
 	fgets(buff, 255, (FILE*)fp);
-	if ((fp = fopen("C:\\Users\\PCuser\\source\\repos\\Project1\\Project1\\first.txt", "r") )== NULL) {
+	if ((fp = fopen("first.txt", "r") )== NULL) {
 		printf("can not open first.txt\n");
 		return 0;
 	}
 
-	if (fp = fopen("C:\\Users\\PCuser\\source\\repos\\Project1\\Project1\\second.txt", "w") == NULL) {
+	if (fp = fopen("second.txt", "w") == NULL) {
 		printf("can not open second.txt\n");
 		return 0;
 	}
