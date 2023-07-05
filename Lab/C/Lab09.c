@@ -1,4 +1,4 @@
-Lab#define _CRT_SECURE_NO_WARNINGS 0
+#define _CRT_SECURE_NO_WARNINGS 0
 
 #include <stdio.h>
 
