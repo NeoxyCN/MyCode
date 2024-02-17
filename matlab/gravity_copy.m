@@ -1,0 +1,11 @@
+G=6.67*1e-2;
+R=50;
+D=100;
+sigma=1;
+x=-200:5:200;
+M=4*pi*R.^3*sigma/3;
+g2=(G*M*D)./((x.^2+D.^2).^1.5);
+figure(1);
+plot(x,g2,'r-');
+xlabel('x(m)');
+ylabel('\Deltag');

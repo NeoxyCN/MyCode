@@ -1,0 +1,15 @@
+close all;
+clear;
+clc;
+R=50;
+D=50;
+Sigma=1;
+X=-200:5:200;
+G=6.671e-2;
+Lambda=Sigma*pi*(R^2);
+Delta_G=(2*G*Lambda*D)./(X.^2+D^2);
+figure;
+plot(X,Delta_G);
+title("二度圆柱体重力异常");
+xlabel("X");
+ylabel("\DeltaG");
